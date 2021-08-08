@@ -1,0 +1,19 @@
+{
+    "name": "ishan/phpstan-my-custom-rules",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\PHPStan\\": "phpstan"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.93"
+    },
+    "scripts": {
+        "analyze": "phpstan clear-result-cache && phpstan analyse --memory-limit 2G -c phpstan.neon"
+    }
+}

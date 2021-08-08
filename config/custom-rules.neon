@@ -1,0 +1,5 @@
+services:
+    -
+        class: App\PHPStan\Rules\CheckClassIsFinalRule
+        tags:
+            - phpstan.rules.rule
